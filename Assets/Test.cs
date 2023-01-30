@@ -39,6 +39,6 @@ public class Test : MonoBehaviour
         lastValue = message.data;
         EyeOfRaInfo info = JsonConvert.DeserializeObject<EyeOfRaInfo>(message.data);
         
-        transform.eulerAngles = new Vector3(info.Angle.Z, info.Angle.Y, info.Angle.X);
+        transform.eulerAngles = new Vector3(info.Gyroscope.Z, info.Gyroscope.Y, info.Gyroscope.X);
     }
 }

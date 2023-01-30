@@ -5,5 +5,7 @@ using System.Collections.Generic;
 [System.Serializable]
 public class EyeOfRaInfo
 {
-    public Vector3 Angle;
+    public Vector3 Gyroscope;
+    public Vector3 Accelerometer;
+    public Vector3 Magnetometer;
 }
